@@ -2,7 +2,9 @@ var express = require('express');
 var app = express();
 //var db = require('./db');
 
-//var UserController = require('./user/UserController');
-//app.use('/users', UserController);
+
+
+var LightController = require('./light/LightController');
+app.use('/lights', LightController);
 
 module.exports = app;
